@@ -1,0 +1,8 @@
+{
+  "name": "BDM SPECIAL UPDATES TRACKER",
+  "description": "A comprehensive data management and reporting dashboard for tracking member updates with MySQL backend and AI Assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
