@@ -151,7 +151,40 @@ export const DataEntryForm: React.FC<DataEntryFormProps> = ({
     const t = formData.updateType;
     if (!t) return [];
     if (t.includes("Duplicate")) return ["Retain", "Delist"];
-    if (t.includes("UPDATE 5")) return ["1 - Distance", "2 - Inaccessible", "3 - Supply-Side", "4 - Sickly", "5 - Working", "6 - Disability", "9 - Bullied", "10 - Financial", "11 - Sibling Care", "19 - Early Pregnancy", "20 - Early Marriage", "22 - Emotionally Unprepared"];
+    if (t.includes("UPDATE 5")) return ["[1] - 1 - Distance",
+"[2] - 2 - Inaccessible",
+"[3] - 3 - Supply-Side",
+"[4] - 4 - Sickly",
+"[5] - 5 - Working",
+"[6] - 6 - Disability",
+"[9] - 9 - Bullied",
+"[10] - 10 - Financial",
+"[11] - 11 - Sibling Care",
+"[13] - 13 - Parent’s Decision",
+"[14] - 14 - Miscarriage / Pregnancy Not Applicable",
+"[19] - 19 - Early Pregnancy",
+"[20] - 20 - Early Marriage",
+"[21] - 21 - Child Expressed Disinterest to go to School",
+"[22] - 22 - Emotionally Unprepared",
+"[24] - 24 - Persistent non-compliance in school after exhaustive interventions",
+"[25] - 25 - Purple Tagging",
+"[26] - 26 - Attend Personal/Important Matter",
+"[27] - 27 - Civil Disturbance",
+"[28] - 28 - Conflict with Culture/Belief/Tradition",
+"[29] - 29 - Family Conflict/Family Feud/Rido",
+"[30] - 30 - Gambling / Vices",
+"[31] - 31 - Gender Vulnerabilities",
+"[32] - 32 - Gender-Based Violence Cases and Child Protection Cases",
+"[33] - 33 - Jailed",
+"[34] - 34 - Unaccompanied going to school / health facility",
+"[35] - 35 - Place in kinship care/guardians/not related",
+"[36] - 36 - Psychosocial Factor",
+"[37] - 37 - Violence Against Women and Children (VAWC)",
+"[38] - 38 - Victims of traditional and harmful practices",
+"[39] - 39 - Beneficiary registered under another facility",
+"[41] - 41 - Unavailability of School/Health Facility",
+"[42] - 42 - Unavailability of Teacher/Health Worker/ Personnel",
+];
     if (t.includes("UPDATE 2")) return ["Municipality", "Province"];
     if (t.includes("UPDATE 1 & 8")) return ["Update 1 - Newborn", "Update 8 - Adtl Member"];
     if (t.includes("UPDATE 11")) return ["Selection", "Deselection"];
@@ -469,7 +502,7 @@ export const DataEntryForm: React.FC<DataEntryFormProps> = ({
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Date Received</label>
+                    <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1">Date Tracked</label>
                     <div className="relative">
                         <input 
                             type="date"
